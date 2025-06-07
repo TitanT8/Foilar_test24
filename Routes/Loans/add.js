@@ -68,5 +68,5 @@ router.get('/customer-land/:phoneNumber', async (req, res) => {
       res.status(500).json({ message: 'Error fetching customer', error });
     }
   });
-  
+  // 1
   module.exports = router;

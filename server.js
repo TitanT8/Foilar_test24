@@ -33,6 +33,8 @@ const sigRoute = require('./Routes/Loans/signature/sigRoute');
 const imgRoute = require('./Routes/customer/imageRoute');
 const docs = require('./Routes/customer/uploads');
 
+const lendertransactionroute = require('./Routes/Loans/LendertransactionRoute')
+
 
 app.use(bodyParser.json());
 
@@ -64,6 +66,8 @@ app.use("/api/images", imageRoutes);
 app.use("/api", sigRoute );
 app.use("/api", imgRoute );
 app.use("/api", docs );
+
+app.use("/api", lendertransactionroute)
 
 // Middleware
 

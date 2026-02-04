@@ -1,8 +1,8 @@
 const express = require('express');
 const router = express.Router();
 const { authenticateUser } = require('../../middleware/authentication');
-const TakenLoan = require('../../models/loans/takenLoanSchema'); // Adjust path as needed
-const Lender = require('../../models/loans/lenderSchema'); // Adjust path as needed
+const TakenLoan = require('../../models/loans/loanSchema'); // Adjust path as needed
+const Lender = require('../../models/loans/customer-land'); // Adjust path as needed
 
 // ==========================================
 // DELETE TRANSACTION
